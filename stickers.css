@@ -1,0 +1,26 @@
+.sticker {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.pack1 {
+  background-image: url('../assets/stickers/star.png');
+  top: 30%;
+  left: 15%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.pack2 {
+  background-image: url('../assets/stickers/cloud.png');
+  bottom: 20%;
+  right: 10%;
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
